@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#034694">
+  <meta name="description" content="A fan-made Chelsea FC and Cole Palmer website, celebrating the Blues, the number 10 and the Z dotss Cole Palmer rap.">
+  <title>Blue Is The Colour | Chelsea & Cole Palmer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--blue:#034694;--deep:#061b3a;--royal:#0b65bd;--ice:#eaf4ff;--gold:#f4c75e;--ink:#101d30;--muted:#617187;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f4f8fd;color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 42px));margin:auto}
+    .topline{height:5px;background:linear-gradient(90deg,var(--gold) 0 12%,var(--blue) 12% 100%)}
+    header{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:900;letter-spacing:1px;color:var(--blue);line-height:.9}.brand small{display:block;font:700 9px 'DM Sans',sans-serif;letter-spacing:2.2px;color:#617187;margin-top:6px}
+    nav{display:flex;gap:26px;align-items:center;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:#35465c}nav a:hover{color:var(--royal)}.nav-cta{background:var(--blue);color:white;padding:13px 19px;border-radius:4px}
+    .hero{background:linear-gradient(115deg,#061b3a 0%,#034694 58%,#0c65b7 100%);color:#fff;position:relative;overflow:hidden}
+    .hero:before{content:"CHELSEA";position:absolute;font:900 clamp(120px,24vw,310px)/.8 'Barlow Condensed',sans-serif;letter-spacing:-8px;color:#ffffff09;right:-20px;bottom:-8px;white-space:nowrap}
+    .hero-inner{min-height:570px;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center;padding-top:60px;padding-bottom:60px;position:relative;z-index:1}
+    .eyebrow{font-size:10px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold)}
+    h1,h2,h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase}
+    h1{font-size:clamp(66px,9vw,116px);line-height:.82;letter-spacing:-2px;margin:20px 0 24px;font-weight:900;max-width:650px}h1 span{color:var(--gold);display:block}
+    .hero p{font-size:15px;line-height:1.8;color:#d8e8fb;max-width:510px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 22px;border-radius:4px;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase}.btn-gold{background:var(--gold);color:#102b4d}.btn-outline{border:1px solid #ffffff70;color:white}
+    .number-art{min-height:370px;display:flex;align-items:center;justify-content:center;position:relative}
+    .number-art:before{content:"10";font:900 clamp(250px,34vw,440px)/.8 'Barlow Condensed',sans-serif;color:#fff;letter-spacing:-20px;text-shadow:0 18px 55px #00152f70;transform:rotate(-7deg)}
+    .number-art:after{content:"COLD PALMER";position:absolute;bottom:18px;right:3%;font:800 17px 'Barlow Condensed',sans-serif;letter-spacing:4px;color:var(--gold);transform:rotate(-5deg)}
+    .ticker{background:var(--gold);color:#092b54;padding:14px 0;overflow:hidden;font:800 12px 'DM Sans',sans-serif;letter-spacing:1.5px;text-align:center;text-transform:uppercase}
+    section{padding:82px 0}.section-title{max-width:700px;margin:0 auto 38px;text-align:center}.section-title .eyebrow{color:#bd8730}.section-title h2{font-size:clamp(42px,5vw,62px);line-height:.95;color:var(--deep);margin:12px 0}.section-title p{color:var(--muted);font-size:14px;line-height:1.8}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#fff;border:1px solid #e0eaf5;border-radius:8px;padding:28px;box-shadow:0 10px 30px #0b376b0a}.feature .tag{font-size:10px;color:var(--royal);font-weight:800;letter-spacing:1.5px}.feature h3{font-size:29px;color:var(--blue);margin:14px 0 8px}.feature p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+    .palmer{background:linear-gradient(135deg,#e8f3ff,#fff 65%)}.palmer-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:center}.palmer-art{min-height:390px;border-radius:8px;background:radial-gradient(circle at 50% 40%,#ffffff 0 20%,transparent 20.5%),linear-gradient(145deg,#0b65bd,#034694 62%,#061b3a);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 20px 45px #03469425}.palmer-art:before{content:"10";font:900 270px/.8 'Barlow Condensed',sans-serif;color:#ffffff28}.palmer-art:after{content:"COLD";position:absolute;bottom:23px;left:25px;color:#fff;font:900 44px 'Barlow Condensed',sans-serif;letter-spacing:2px}
+    .palmer-copy h2{font-size:clamp(46px,5vw,66px);line-height:.9;color:var(--blue);margin:12px 0 18px}.palmer-copy p{font-size:14px;line-height:1.9;color:var(--muted)}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:24px 0}.fact{background:#fff;border:1px solid #dce8f5;padding:16px;border-radius:5px}.fact strong{display:block;color:var(--blue);font:800 25px 'Barlow Condensed',sans-serif}.fact span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:700}
+    .song{background:#061b3a;color:#fff}.song .section-title h2{color:#fff}.song .section-title p{color:#c7d7e9}.song-panel{max-width:900px;margin:auto;background:#0b2b53;border:1px solid #ffffff20;border-radius:10px;padding:18px;box-shadow:0 20px 50px #0003}.video{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:6px;overflow:hidden}.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.song-meta{display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap;padding:18px 5px 4px}.song-meta strong{font:700 24px 'Barlow Condensed',sans-serif;text-transform:uppercase}.song-meta span{font-size:11px;color:#c7d7e9}
+    .club{background:#fff}.club-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.club-card{padding:30px;border-radius:8px;background:linear-gradient(135deg,#034694,#06264c);color:#fff;min-height:210px}.club-card:nth-child(2){background:linear-gradient(135deg,#0c65b7,#034694)}.club-card h3{font-size:34px;margin:12px 0}.club-card p{font-size:13px;line-height:1.8;color:#d9e9f9}.club-card a{display:inline-block;margin-top:8px;color:var(--gold);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+    .disclaimer{font-size:11px;line-height:1.7;color:#77869a;text-align:center;margin-top:28px}
+    footer{background:#04142b;color:#fff;padding:30px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-inner p{font-size:11px;color:#a9bbd0;margin:5px 0}.footer-brand{font:900 24px 'Barlow Condensed',sans-serif;letter-spacing:1px}
+    @media(max-width:800px){.hero-inner{grid-template-columns:1fr;gap:0;padding-top:58px;padding-bottom:30px}.number-art{min-height:230px}.number-art:before{font-size:270px}.feature-grid{grid-template-columns:1fr}.palmer-grid{grid-template-columns:1fr;gap:30px}.palmer-art{min-height:280px}.club-grid{grid-template-columns:1fr}}
+    @media(max-width:650px){.wrap{width:min(100% - 32px,560px)}header{height:72px}nav{gap:10px}nav a:not(.nav-cta){display:none}.nav-cta{padding:12px 15px}.hero-inner{min-height:0;padding-top:54px}.hero h1{font-size:clamp(64px,17vw,90px)}.number-art{min-height:185px}.number-art:before{font-size:230px}.number-art:after{font-size:13px;bottom:8px}section{padding:64px 0}.facts{grid-template-columns:1fr 1fr}.song-panel{padding:10px}.song-meta strong{font-size:21px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="wrap">
+    <a class="brand" href="#">BLUE IS THE COLOUR<small>CHELSEA FC FAN PAGE</small></a>
+    <nav aria-label="Main navigation"><a href="#chelsea">Chelsea</a><a href="#palmer">Cole Palmer</a><a href="#song">The song</a><a class="nav-cta" href="https://www.chelseafc.com/" target="_blank" rel="noopener">Official Chelsea ↗</a></nav>
+  </header>
+  <main>
+    <section class="hero" style="padding:0">
+      <div class="wrap hero-inner">
+        <div><div class="eyebrow">The pride of West London · Since 1905</div><h1>Blue is <span>the colour.</span></h1><p>A fan-made celebration of Chelsea Football Club, the Blues and their number 10 — Cole Palmer. Explore the club, discover Palmer's story and watch the Z dotss Cole Palmer rap.</p><div class="actions"><a class="btn btn-gold" href="#palmer">Meet Cole Palmer</a><a class="btn btn-outline" href="#song">Play the song ↓</a></div></div>
+        <div class="number-art" aria-label="Number 10 graphic"></div>
+      </div>
+    </section>
+    <div class="ticker">Keep the blue flag flying high&nbsp;&nbsp; ★ &nbsp;&nbsp; Chelsea Football Club &nbsp;&nbsp; ★ &nbsp;&nbsp; Cold Palmer #10</div>
+    <section id="chelsea"><div class="wrap"><div class="section-title"><div class="eyebrow">The Blues</div><h2>More than a football club.</h2><p>Based in Fulham, West London, Chelsea have been part of English football since 1905. Stamford Bridge has been the club's home throughout its history.</p></div><div class="feature-grid">
+      <article class="feature"><div class="tag">01 / HOME</div><h3>Stamford Bridge</h3><p>The home of Chelsea in Fulham, West London — a ground with generations of Blues memories.</p></article>
+      <article class="feature"><div class="tag">02 / IDENTITY</div><h3>The Blues</h3><p>Royal blue shirts, passionate supporters and the famous Chelsea name.</p></article>
+      <article class="feature"><div class="tag">03 / CLUB</div><h3>Our Chelsea</h3><p>Follow the first team, fixtures, news and club updates through Chelsea's official channels.</p></article>
+    </div></div></section>
+    <section class="palmer" id="palmer"><div class="wrap palmer-grid"><div class="palmer-art" role="img" aria-label="Cole Palmer number 10 inspired graphic"></div><div class="palmer-copy"><div class="eyebrow">Chelsea's number 10</div><h2>Cold Palmer.</h2><p>Cole Palmer is an English attacking midfielder and winger who joined Chelsea from Manchester City in September 2023. Known for his composure, creativity and trademark cold celebration, he quickly became a major figure for the Blues.</p><p>In October 2026, Chelsea announced that Palmer had signed a new contract running until 2034.</p><div class="facts"><div class="fact"><strong>10</strong><span>Chelsea shirt number</span></div><div class="fact"><strong>6 May 2002</strong><span>Date of birth</span></div><div class="fact"><strong>England</strong><span>International team</span></div><div class="fact"><strong>2034</strong><span>Contract until</span></div></div><a class="btn btn-gold" style="background:#034694;color:#fff" href="https://www.chelseafc.com/en/teams/profile/cole-palmer" target="_blank" rel="noopener">Official player profile ↗</a></div></div></section>
+    <section class="song" id="song"><div class="wrap"><div class="section-title"><div class="eyebrow">Turn it up</div><h2>The Cole Palmer rap.</h2><p>Featuring the Z dotss video — “COLE PALMER RAP 🧊”. Press play below to watch on this page.</p></div><div class="song-panel"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/bs-Rs8dtOoc?rel=0" title="COLE PALMER RAP by Z dotss" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="song-meta"><strong>COLE PALMER RAP 🧊</strong><span>By Z dotss · YouTube · 20 July 2025</span><a class="btn btn-gold" href="https://www.youtube.com/watch?v=bs-Rs8dtOoc" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div></div></section>
+    <section class="club"><div class="wrap"><div class="section-title"><div class="eyebrow">Follow the Blues</div><h2>Stay in the game.</h2><p>Go straight to official Chelsea channels for the latest news, fixtures and player updates.</p></div><div class="club-grid"><article class="club-card"><div class="eyebrow">Official website</div><h3>Chelsea FC</h3><p>Club news, match reports, fixtures, tickets and team information.</p><a href="https://www.chelseafc.com/" target="_blank" rel="noopener">Visit chelseafc.com ↗</a></article><article class="club-card"><div class="eyebrow">Player profile</div><h3>Cole Palmer</h3><p>Read Palmer's official profile and follow his career with the Blues.</p><a href="https://www.chelseafc.com/en/teams/profile/cole-palmer" target="_blank" rel="noopener">View player profile ↗</a></article></div><p class="disclaimer">This is an independent fan-made website and is not affiliated with, endorsed by or sponsored by Chelsea Football Club, Cole Palmer or Z dotss. Video playback is provided by YouTube. All trademarks and video rights belong to their respective owners.</p></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><div><div class="footer-brand">BLUE IS THE COLOUR</div><p>A fan page for Chelsea FC and Cole Palmer.</p></div><p>© <span id="year"></span> Fan-made website. Not an official Chelsea site.</p></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
